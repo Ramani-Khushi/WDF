@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EduVerse - Search Notes</title>
+</head>
+
+<body>
+
+    <h2>🔍 Search Notes by Stream & Subject</h2>
+
+    <form action="notes.html" method="get">
+
+        <!-- Step 1: Stream Selection -->
+        <label for="stream">Select Stream:</label>
+        <select name="stream" id="stream" required>
+            <option value="">--Select Stream--</option>
+            <option value="medical">Medical</option>
+            <option value="tech">Technical</option>
+           
+        </select><br><br>
+
+        <!-- Step 2: Subject Selection (All options grouped) -->
+        <label for="subject">Select Subject:</label>
+        <select name="subject" id="subject" required>
+        <option value="">--Select Subject--</option>
+            <optgroup label="Medical">
+                <option value="anatomy">Anatomy</option>
+                <option value="pharmacology">Pharmacology</option>
+                <option value="physiology">Physiology</option>
+                <option value="biochemistry">Biochemistry</option>
+            </optgroup>
+
+            <optgroup label="Technical">
+                <option value="cs">Computer Science</option>
+                <option value="aiml">AI & ML</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="civil">Civil</option>
+                <option value="it">Information Tech</option>
+            </optgroup>
+
+        </select>
+
+        <input type="submit" value="Search Notes">
+
+    </form>
+
+</body>
+
+</html>

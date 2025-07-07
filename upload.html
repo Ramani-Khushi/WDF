@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EduVerse -Upload Notes </title>
+</head>
+
+<body>
+
+    <h1>Upload Your Notes</h1>
+    <p>Fill the form below to contribute your study material. All fields are required.</p>
+ 
+    <form action="thankyou.html" method="post">
+
+        Name: <input type="text" name="uploader" required><br><br>
+
+        Stream:
+        <select name="stream" required>
+            <option value="">--Select Stream--</option>
+            <option value="medical">Medical</option>
+            <option value="tech">Technical</option>
+            
+        </select><br><br>
+
+        Subject:
+        <select name="subject" required>
+            <option value="">--Select Subject--</option>
+            <option value="DSA">DSA</option>
+            <option value="pharma">Pharmacology</option>
+        </select><br><br>
+
+        Notes Title: <input type="text" name="title" required><br><br>
+        Upload File: <input type="file" name="notesfile" accept=".pdf,.docx" required><br><br>
+
+        <input type="submit" value="Upload">
+
+    </form>
+
+    <hr>
+    <p>Note: Only PDF and DOCX files are supported. Max file size: 5MB.</p>
+    <br><a href="index.html">⬅ Back</a>
+
+</body>
+
+</html>
